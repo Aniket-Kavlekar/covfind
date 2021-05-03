@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.png">
+    <title>CovFind | A directory for covid resources</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="wrapper"><a class="site-title" rel="author" href="/">CovFind</a>
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger">
+                    <span class="menu-icon">
+                        <svg viewBox="0 0 18 15" width="18px" height="15px">
+                            <path
+                                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z" />
+                        </svg>
+                    </span>
+                </label>
+
+                <div class="trigger"><a class="page-link" href="/about">About</a><a class="page-link"
+                        href="/dis">Disclaimer</a><a class="page-link" href="/faq">FAQ</a></div>
+            </nav>
+        </div>
+    </header>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <div class="home">
+
+                <h1 class="page-heading">CovFind - A COVID-19 resource finder</h1>
+
+                <p>My goal is to make COVID-19 information as easy and accessible as possible. Thats why, I have
+                    created a directory of curated links to help you find COVID related information.</p>
+
+                <p>Links to official information provided by government entities is listed in <b>bold</b> text. All
+                    other links are provided by volunteer groups or other non-government organisations.</p>
+
+                <p>You can use the list below to find resources such as:
+                <ul>
+                    <li>Information on beds, ventilators, ICU, helpline numbers and vaccination centers near you</li>
+                    <li>Covid related dashboards showcasing active, recovered and vaccinated numbers</li>
+                    <li>Links to updated information about covid-norms and travel restrictions in your state</li>
+                    <li>... and more!</li>
+                </ul>
+                </p>
+
+                <p>If you want to help out or suggest a change or addition to my list, please fill out <a
+                        href="https://forms.gle/JkXZ7p2vXzTnubBC9">this form</a> or mail me directly at <a href="mailto:askavlekar@gmail.com" target="_blank" rel="noopener noreferer">askavlekar@gmail.com</a></p>
+
+                <div id="link-list"></div>
+                <h3>National (India)</h3>
+                <ul id="IN">
+                    <li><a href="https://www.mygov.in/covid-19/" class="verified" data-record-id="67">My Gov(मेरी सरकार)</a>
+                    </li>
+                    <li><a href="https://www.mohfw.gov.in/" class="verified"
+                            data-record-id="76">Ministry of health and family welfare(स्वास्थ्य और परिवार कल्याण मंत्रालय)</a></li>
+                    <li><a href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/5?id=DASHBOARD_601b9e214c7a6b689d76f493&utm_source=MyGovS4S&utm_medium=MyGovS4Sweb&tabId=5&home=1" class="verified"
+                            data-record-id="102">Covid resources(कोविड-19 संसाधन)</a></li>
+                    <li><a href="https://www.cowin.gov.in/home" class="verified" data-record-id="104">Vaccination Portal(टीकाकरण पोर्टल)</a></li>
+                    <li><a href="https://www.covid19india.org/" class="" data-record-id="104">Covid-19 India(कोविड-19 भारत)</a></li>
+                   
+                </ul>
+                <h3>Andhra Pradesh</h3>
+                <ul id="AP">
+                    <li><a href="http://hmfw.ap.gov.in/carona_info.aspx" class="verified"
+                            data-record-id="43">Health, medical and family welfare department(स्वास्थ्य, चिकित्सा और परिवार कल्याण विभाग)</a></li>
+                    <li><a href="http://dashboard.covid19.ap.gov.in/ims/covidvaccine_centers/" class="verified" data-record-id="137">Vaccination centers(
+                        टीकाकरण केंद्र)</a>
+                    </li>
+                    
+                </ul>
+                <h3>Arunachal Pradesh</h3>
+                <ul id="ARP">
+                    <li><a href="http://health.arunachal.gov.in/" class="verified"
+                            data-record-id="6">Department of Health & Family Welfare(स्वास्थ्य एवं परिवार कल्याण विभाग)</a></li>
+                    
+                </ul>
+                <h3>Assam</h3>
+                <ul id="AS">
+                    <li><a href="https://covid19.assam.gov.in/" class="verified"
+                            data-record-id="170">Government of Assam(असम सरकार)</a></li>
+                   
+                </ul>
+                <h3>Bihar</h3>
+                <ul id="B">
+                    <li><a href="https://covid19.bihar.gov.in/" class="verified"
+                            data-record-id="2">Government of Bihar(बिहार सरकार)</a></li>
+                   
+                </ul>
+                <h3>Chhatisgarh</h3>
+                <ul id="C">
+                    <li><a href="http://www.cghealth.nic.in/cghealth17/" class="verified"
+                            data-record-id="149">Department of Health & Family Welfare & Medical Education(स्वास्थ्य और परिवार कल्याण और चिकित्सा शिक्षा विभाग)</a></li>
+                   
+                </ul>
+                <h3>Delhi</h3>
+                <ul id="DL">
+                    <li><a href="https://coronabeds.jantasamvad.org/beds.html" class="verified"
+                            data-record-id="149">Dashboard for beds(बेड के लिए डैशबोर्ड)</a></li>
+                            <li><a href="https://delhifightscorona.in/" class="verified"
+                                data-record-id="149">Delhi fights Corona(दिल्ली लड़ती है कोरोना)</a></li>
+                    
+                </ul>
+                <h3>Goa</h3>
+                <ul id="GA">
+                    <li><a href="https://www.goa.gov.in/covid-19/" class="verified"
+                            data-record-id="171">Government of Goa(गोवा सरकार)</a></li>
+                  
+                </ul>
+                <h3>Gujrat</h3>
+                <ul id="GU">
+                    <li><a href="https://gujcovid19.gujarat.gov.in/" class="verified"
+                            data-record-id="172">Government of Gujrat(गुजरात सरकार)</a></li>
+                </ul>
+                <h3>Haryana</h3>
+                <ul id="HA">
+                    <li><a href="http://www.nhmharyana.gov.in/page?id=208" class="verified"
+                            data-record-id="234">National health mission, Haryana(राष्ट्रीय स्वास्थ्य मिशन, हरियाणा)</a></li>
+                </ul>
+                <h3>Himachal Pradesh</h3>
+                <ul id="HP">
+                    <li><a href="https://himachal.nic.in/en-IN/" class="verified"
+                            data-record-id="28">Himachal Pradesh, the official site(हिमाचल प्रदेश, आधिकारिक साइट)</a></li>
+                   
+                </ul>
+                <h3>Jharkhand</h3>
+                <ul id="JH">
+                    <li><a href="https://www.jharkhand.gov.in/Home/Covid19Dashboard" class="verified"
+                            data-record-id="20">Government of Jharkhand(झारखंड सरकार)</a></li>
+                   
+                </ul>
+                <h3>Karnataka</h3>
+                <ul id="KA">
+                    <li><a href="https://covid19.karnataka.gov.in/english" class="verified"
+                            data-record-id="282">Covid-19 Information Center(कोविड-19 सूचना केंद्र)</a></li>
+                    <li><a href="https://covid19.karnataka.gov.in/page/COVID+Vaccination+Centres/en" class="verified" data-record-id="104">Vaccination Center(टीकाकरण केंद्र)</a></li>
+                </ul>
+                <h3>Kerala</h3>
+                <ul id="KE">
+                    <li><a href="http://lsgkerala.gov.in/en" class="verified"
+                            data-record-id="169">Government of Kerala(केरल सरकार)</a></li>
+                </ul>
+                <h3>Madhya Pradesh</h3>
+                <ul id="MP">
+                    <li><a href="http://sarthak.nhmmp.gov.in/covid/" class="verified"
+                            data-record-id="168">Government of Madhya Pradesh(मध्य प्रदेश सरकार)</a></li>
+                </ul>
+                <h3>Maharashtra</h3>
+                <ul id="MH">
+                    <li><a href="https://arogya.maharashtra.gov.in/1035/Home" class="verified"
+                            data-record-id="39">Government of Maharashtra public health department(महाराष्ट्र सरकार की सार्वजनिक स्वास्थ्य विभाग)</a></li>
+                    <li><a href="https://arogya.maharashtra.gov.in/1177/Dedicated-COVID-Facilities-Status" class="verified" data-record-id="91">Dedicated Covid Facilities(समर्पित कोविद सुविधाएं)</a></li>
+                    <li><a href="https://www.covid19maharashtragov.in/mh-covid/dashboard" class="verified"
+                            data-record-id="116">Covid-19 Dashboard(कोविड-19 डैशबोर्ड)</a></li>
+                    
+                </ul>
+                <h3>Manipur</h3>
+                <ul id="MA">
+                    <li><a href="http://nrhmmanipur.org/?page_id=2493" class="verified"
+                            data-record-id="272">National health mission, Manipur(राष्ट्रीय स्वास्थ्य मिशन, मणिपुर)</a></li>
+                </ul>
+                <h3>Meghalaya</h3>
+                <ul id="MG">
+                    <li><a href="http://meghalayaonline.gov.in/covid/login.htm" class="verified"
+                            data-record-id="42">Meghalaya Covid-19(कोविड-19 मेघालय)</a></li>
+                   
+                </ul>
+                <h3>Mizoram</h3>
+                <ul id="MZ">
+                    <li><a href="https://mcovid19.mizoram.gov.in/" class="verified"
+                            data-record-id="153">m-Covid-19(म-कोविड-19)</a></li>
+                </ul>
+                <h3>Odisha</h3>
+                <ul id="OD">
+                    <li><a href="https://covid19.odisha.gov.in/" class="verified"
+                            data-record-id="271">Government of Odisha(ओडिशा सरकार)</a></li>
+                </ul>
+                <h3>Punjab</h3>
+                <ul id="PU">
+                    <li><a href="http://health.punjab.gov.in/" class="verified"
+                            data-record-id="270">Government of Punjab(पंजाब सरकार)</a></li>
+                </ul>
+                <h3>Rajasthan</h3>
+                <ul id="RA">
+                    <li><a href="https://covidinfo.rajasthan.gov.in/" class="verified"
+                            data-record-id="167">Government of Rajasthan(राजस्थान सरकार)</a></li>
+                </ul>
+                <h3>Sikkim</h3>
+                <ul id="SI">
+                    <li><a href="https://www.covid19sikkim.org/"
+                            class="verified"
+                            data-record-id="13">Government of Sikkim(सिक्किम सरकार)</a>
+                    </li>
+                   
+                </ul>
+                <h3>Tamil Nadu</h3>
+                <ul id="TN">
+                    <li><a href="https://stopcorona.tn.gov.in/" class="verified" data-record-id="4">Government of Tamil Nadu(तमिलनाडु सरकार)</a></li>
+                  
+                </ul>
+                <h3>Telangana</h3>
+                <ul id="TE">
+                    <li><a href="https://covid19.telangana.gov.in/" class="verified"
+                            data-record-id="123">Government of Telangana(तेलंगाना सरकार)</a></li>
+                   
+                </ul>
+                <h3>Tripura</h3>
+                <ul id="TP">
+                    <li><a href="https://covid19.tripura.gov.in/" class="verified"
+                            data-record-id="166">Government of Tripura(त्रिपुरा सरकार)</a></li>
+                    
+                </ul>
+                <h3>Uttarakhand</h3>
+                <ul id="UK">
+                    <li><a href="https://covid19.uk.gov.in/" class="verified"
+                            data-record-id="266">Government of Uttarakhand(उत्तराखंड सरकार)</a></li>
+                </ul>
+                <h3>Uttar Pradesh</h3>
+                <ul id="UP">
+                    <li><a href="http://dgmhup.gov.in/en/default" class="verified"
+                            data-record-id="265">Directorate of Medical & Health Services, Uttar Pradesh(चिकित्सा एवं स्वास्थ्य सेवा निदेशालय, उत्तर प्रदेश)</a></li>
+                </ul>
+                <h3>West Bengal</h3>
+                <ul id="WB">
+                    <li><a href="https://wb.gov.in/COVID-19.aspx" class="verified"
+                            data-record-id="240">Government of West Bengal(पश्चिम बंगाल की सरकार)</a></li>
+                </ul>
+                <h3>Andaman and Nicobar Islands</h3>
+                <ul id="ANN">
+                    <li><a href="https://nicobars.andaman.nic.in/" class="verified"
+                            data-record-id="264">Covid-19 Andaman and Nicobar(कोविड-19 अण्डमान और निकोबार की सरकार)</a></li>
+                </ul>
+                <h3>Chandigarh</h3>
+                <ul id="CG">
+                    <li><a href="http://chdcovid19.in/" class="verified"
+                            data-record-id="231">Covid-19 Chandigarh(कोविड-19 चंडीगढ़)</a></li>
+                </ul>
+                <h3>Dadra and Nagar Haveli and Daman and Diu</h3>
+                <ul id="NH">
+                    <li><a href="http://dnh.nic.in/Departments/COVID19.aspx" class="verified"
+                            data-record-id="161">Covid-19 Dadra and Nagar Haveli and Daman and Diu(कोविड-19 दादरा और नगर हवेली)</a></li>
+                </ul>
+                <h3>Jammu and Kashmir</h3>
+                <ul id="JK">
+                    <li><a href="https://jk.gov.in/jammukashmir/?q=content/govt-orders" class="verified" data-record-id="24">Covid-19 Jammu and Kashmir(जम्मू और कश्मीर की सरकार)</a></li>
+                    
+                </ul>
+                <h3>Pondicherry</h3>
+                <ul id="PO">
+                    <li><a href="https://puducherry-dt.gov.in/covid-19-2/" class="verified"
+                            data-record-id="161">Government of Pondichery(पांडिचेरी की सरकार)</a></li>
+                </ul>
+                <h3>Lakshwadeep</h3>
+                <ul id="LK">
+                    <li><a href="https://lakshadweep.gov.in/past-notices/covid_19/page/2/" class="verified"
+                            data-record-id="161">UT administration of Lakshadweep(लक्षद्वीप का यूटी प्रशासन)</a></li>
+                </ul>
+                
+
+                <h2 id="share-this-site">Has CovFind helped you?</h2>
+                <p>If CovFind has saved you time looking for a resource, please consider sharing on social media. It is
+                    by far the best way you can help spread the word about CovFind</p>
+
+                <div class="social-links">
+                    <ul class="social-media-list">
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://vacfind.org&"
+                                title="Share on Facebook" target="_blank" rel="noopener" aria-label="Share on Facebook">
+                                <div class="sharing-button" style="background-color: #2d4373">
+                                    <i class="fa fa-facebook-official social-icon"></i> Facebook
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="https://twitter.com/intent/tweet?text=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&url=https://vacfind.org&"
+                                title="Share on Twitter" target="_blank" rel="noopener" aria-label="Share on Twitter">
+                                <div class="sharing-button" style="background-color: #55acee">
+                                    <i class="fa fa-twitter social-icon"></i> Twitter
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="https://www.pinterest.com/pin/create/button/?url=https://vacfind.org&media=https://vacfind.org&description=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&"
+                                title="Share on Pinterest" target="_blank" rel="noopener"
+                                aria-label="Share on Pinterest">
+                                <div class="sharing-button" style="background-color: #bd081c">
+                                    <i class="fa fa-pinterest-p social-icon"></i> Pinterest
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://vacfind.org&posttype=link&title=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&caption=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&content=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&"
+                                title="Share on Tumblr" target="_blank" rel="noopener" aria-label="Share on Tumblr">
+                                <div class="sharing-button" style="background-color: #222d3c">
+                                    <i class="fa fa-tumblr social-icon"></i> Tumblr
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="http://www.reddit.com/submit?url=https://vacfind.org&resubmit=true&title=VacFind:%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine&"
+                                title="Share on Reddit" target="_blank" rel="noopener" aria-label="Share on Reddit">
+                                <div class="sharing-button" style="background-color: #3a80c1">
+                                    <i class="fa fa-reddit-alien social-icon"></i> Reddit
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://vacfind.org&title=VacFind%20Resource%20Directory&summary=VacFind%20is%20a%20national%20directory%20of%20COVID%20vaccination%20resources%20to%20help%20you%20find%20a%20vaccine.&source=https://vacfind.org&"
+                                title="Share on Linkedin" target="_blank" rel="noopener" aria-label="Share on Linkedin">
+                                <div class="sharing-button" style="background-color: #046293">
+                                    <i class="fa fa-linkedin social-icon"></i> Linkedin
+                                </div>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+                        <li>
+                            <a href="whatsapp://send?text=I%20used%20VacFind%20to%20save%20time%20looking%20for%20vaccination%20resources%20and%20thought%20you%20might%20find%20it%20useful.%20https://vacfind.org&"
+                                title="Share on WhatsApp" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+                                <div class="sharing-button" style="background-color: #1da851">
+                                    <i class="fa fa-whatsapp social-icon"></i> WhatsApp
+                                </div>
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="site-footer h-card">
+        <data class="u-url" href="/"></data>
+        <div class="wrapper">
+            <div class="footer-col-wrapper">
+                <div class="footer-col">
+                    <p>CovFind is a directory for COVID resources to help people find available
+                        information.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
